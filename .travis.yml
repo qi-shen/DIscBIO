@@ -7,5 +7,7 @@ cache:
 r:
   - release
   - devel
+before_install:
+  - sudo R CMD javareconf
 bioc_required: true
 use_bioc: true
