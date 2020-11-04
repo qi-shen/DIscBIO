@@ -1,5 +1,12 @@
 # Source: https://docs.travis-ci.com/user/languages/r
 language: r
+addons:
+  apt:
+    packages:
+      - openjdk-9-jre
+      - openjdk-9-jdk
+      - openjdk-9-source
+      - r-cran-rjava
 cache:
   apt: true
   packages: true
@@ -7,7 +14,5 @@ cache:
 r:
   - release
   - devel
-before_install:
-  - export LD_LIBRARY_PATH=java-8-openjdk-amd64/jre/lib/amd64/server:$LD_LIBRARY_PATH
 bioc_required: true
 use_bioc: true
