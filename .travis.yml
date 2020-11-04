@@ -8,6 +8,6 @@ r:
   - release
   - devel
 install:
-  - sudo R CMD javareconf
+  - R CMD javareconf
 bioc_required: true
 use_bioc: true
