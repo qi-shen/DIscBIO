@@ -7,7 +7,7 @@ cache:
 r:
   - release
   - devel
-before_install:
-  - R CMD javareconf -e
+jdk:
+    - oraclejdk8
 bioc_required: true
 use_bioc: true
