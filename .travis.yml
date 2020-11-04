@@ -4,8 +4,6 @@ addons:
   apt:
     packages:
       - r-cran-rjava
-before_install:
-  - R CMD javareconf -e
 cache:
   apt: true
   packages: true
