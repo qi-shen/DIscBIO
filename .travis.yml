@@ -3,10 +3,9 @@ language: r
 addons:
   apt:
     packages:
-      - openjdk-9-jre
-      - openjdk-9-jdk
-      - openjdk-9-source
       - r-cran-rjava
+before_install:
+  - R CMD javareconf -e
 cache:
   apt: true
   packages: true
