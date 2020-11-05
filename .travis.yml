@@ -1,9 +1,12 @@
 # Source: https://docs.travis-ci.com/user/languages/r
 language: r
+sudo: required
 cache:
   apt: false
   packages: false
   timeout: 3000
+apt_packages:
+  - r-cran-rjava
 r:
   - release
   - devel
